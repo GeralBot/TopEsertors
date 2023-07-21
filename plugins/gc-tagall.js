@@ -4,11 +4,11 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `𝐓𝐨𝐩 𝐄𝐬𝐞𝐫𝐭𝐨𝐫𝐬: ${pesan}`
+let oi = `𝐓𝐨𝐩 𝐃𝐞𝐬𝐞𝐫𝐭𝐨𝐫𝐬: ${pesan}`
 let teks = `𝐑𝐞𝐯𝐢𝐯𝐚𝐧 𝐁𝐨𝐭𝐬 \n\n❏ ${oi}\n❏ 𝐄𝐭𝐢𝐪𝐮𝐞𝐭𝐚𝐬: \n`
 for (let mem of participants) {
 teks += `🔥👹 @${mem.id.split('@')[0]}\n`}
-teks += `➥𝐓𝐨𝐩 𝐄𝐬𝐞𝐫𝐭𝐨𝐫𝐬`
+teks += `➥𝐓𝐨𝐩 𝐃𝐞𝐬𝐞𝐫𝐭𝐨𝐫𝐬`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
